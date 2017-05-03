@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace EsriDemo.Controllers
+namespace EsriLeaflet.Controllers
 {
     public class HomeController : Controller
     {
@@ -13,11 +13,15 @@ namespace EsriDemo.Controllers
             return View();
         }
 
+        /// <summary>
+        /// Returns a set of descriptions of the plugins available in the system. The descriptions are pulled
+        /// down to the client and loaded asynchronously. The descriptions would be better placed in a json file
+        /// within the plugin folders.
+        /// </summary>
         public JsonResult GetPluginDescriptions()
         {
             return Json(new { 
                 plugins = new List<object>() { 
-                    // Panel controls only so far..
                     new { 
                         name = "Layer Control",
                         basePath = "/Plugins/LayerControl",
@@ -32,7 +36,6 @@ namespace EsriDemo.Controllers
                         css = "/Css/editor.css",
                         template = "/Editor.html"
                     }
-                    // Base map picker etc..? do we need toolbar control plugins??
                 }
             }, JsonRequestBehavior.AllowGet);
         }
