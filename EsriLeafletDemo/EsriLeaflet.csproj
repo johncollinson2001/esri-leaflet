@@ -141,6 +141,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\respond.js" />
+    <Content Include="README.md" />
     <None Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
