@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Mapping Application</title>
+
+    @Styles.Render("~/Content/css")
+    @RenderSection("styles", required: false)
+        
+    @Scripts.Render("~/bundles/modernizr")    
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="navbar-header">
+            <span class="navbar-brand">Web Mapping Application</span>
+		</div>		
+		<ul class="nav navbar-nav navbar-right">
+			<li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    Account <strong class="caret"></strong>
+                </a>
+				<ul class="dropdown-menu">
+					<li><a href="#">My Account</a></li>
+					<li><a href="#">Change Password</a></li>
+					<li class="divider"></li>
+					<li><a href="#">Log out</a></li>
+				</ul>
+			</li>
+		</ul>
+    </nav>
+
+    @RenderBody()
+                
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")    
+    @RenderSection("scripts", required: false)
+</body>
+</html>
