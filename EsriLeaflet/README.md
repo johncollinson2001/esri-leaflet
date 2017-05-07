@@ -1,3 +1,12 @@
-﻿A skeleton framework for a rich web mapping application, using leaflet.js and the Esri Arc GIS extensions to leaflet.
+﻿A super simple framework for a rich, plugin based web mapping application.
 
-The demo show cases a single page UI, and a basic plugin system which is a neat way of architecting javascript plugins.
+The app uses the following tech:
+
+* ASP.net MVC
+* leaflet.js
+* ArcGIS Leaflet extensions
+* Bootstrap 3
+
+View an online demo here:
+
+http://esri-leaflet.azurewebsites.net/
